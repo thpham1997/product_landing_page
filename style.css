@@ -2,4 +2,162 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #DCE1E3;
+  /* border-style: dashed;
+  border-width: 0.01rem; */
+}
+
+#header{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 120px;
+  top: 0;
+  background-color: #EEFBFB;
+}
+
+
+#logo{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+}
+#logo > img{
+  background-color: rgb(183, 146, 104);
+  border-radius: 60% 60% 40% 40%;
+}
+#nav-bar{
+  width: 50vw;
+  font-weight: 400;
+  background-color: inherit;
+}
+#nav-bar > ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: inherit;
+}
+#nav-bar > ul > li{
+  list-style: none;
+  background-color: inherit;
+}
+
+li > a{
+  color: #000;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+#video-div{
+  margin-top: 140px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#video{
+  margin: 10px 0;
+}
+#highlighted-product{
+  padding: 4px 10px;
+  border-radius: 10px;
+  background-color: lightsalmon;
+  
+}
+#section-div{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+#products > ul{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 60px;
+  font-size: 20px;
+}
+
+#section-div > section{
+  height: 200px;
+  width: 500px;
+  min-width: 350px;
+  margin: 10px 0 10px 0;
+}
+#on-discount{
+  display: flex;
+  justify-content: center;
+}
+#discount-image{
+  max-height: 200px;
+  padding: 10px 0;
+}
+#address{
+  margin: 20% 0 20% 5%;
+  font-weight: bold;
+  font-size: 20px;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
+#email{
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 900;
+}
+#submit{
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+  border-width: 2px 2px;
+  border-radius: 10px;
+  font-weight: 900;
+  min-width: 120px;
+  border-color: black;
+}
+/* #form-div{
+  text-align: center;
+}
+#form{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 70%;
+}
+#email{
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+#submit{
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+  margin-top: 20px;
+  cursor: pointer;
+} */
+
+@media (max-width: 600px){
+  #header{
+    flex-wrap: wrap;
+  }
+  #nav-bar > ul{
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  #video-div{
+    margin-top: 200px;
+  }
 }
